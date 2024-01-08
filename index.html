@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html><link rel="shortcut icon" href="favicon_ai_generated.ico" type="image/x-icon">
+<head>
+  
+    <style>body {background-image: url(https://png.pngtree.com/back_origin_pic/04/16/64/46e85509700dcbac0a68d7f81167144b.jpg);
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  h2 {
+    color: #303030;
+  }
+  
+  form {
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+    </style>
+    <title>Login</title>
+</head>
+<body>
+    
+   <center> <h2>Criar Conta</h2>
+    <form id="formConta">
+        
+        <label for="username">Nome de usuário:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Senha:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <input type="submit" value="Criar Conta" onclick="redirectToSite()">
+    </form></center>
+<script>
+    document.getElementById('formConta').addEventListener('submit', function(event) {
+  event.preventDefault();
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+  console.log('Conta criada com sucesso! Nome de usuário: ' + username + ', Senha: ' + password);
+});
+</script>
+    
+</body>
+</html>
